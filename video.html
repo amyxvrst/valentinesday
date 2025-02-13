@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dont cringe.. i tried my best!!</title>
+    <style>
+        /* Make the whole page a clickable link */
+        body, html {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Full-page clickable link */
+        a.fullscreen-link {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        video {
+            position: relative;
+            z-index: 2; /* Keep video above the link */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Invisible full-screen link -->
+    <a href="giftbox.html" class="fullscreen-link"></a>
+
+    <!-- Video -->
+    <video width="640" height="360" controls>
+        <source src="minivid.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>

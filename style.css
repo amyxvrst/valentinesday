@@ -1,0 +1,9 @@
+body {
+    cursor: url('penguin.cur'), auto; 
+}
+
+html {
+    background: url('pic1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
