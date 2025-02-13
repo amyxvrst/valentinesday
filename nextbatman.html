@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>to the best boy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            flex-direction: column; /* Stack elements vertically */
+            position: relative; /* To keep bottom image fixed */
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 90px; /* Space for the bottom image */
+        }
+
+        /* Styling for heart images */
+        .images img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+        .images img:hover {
+            cursor: url('penguin.cur'), auto; /* Custom cursor */
+        }
+        /* Zoom effect on hover for heart images only */
+        .images img:hover {
+            transform: scale(1.1); /* Zoom in by 10% */
+        }
+
+        .bottom-image {
+            position: absolute; /* Position it at the bottom */
+            bottom: 20px; /* Adjust space from bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Centers it horizontally */
+            width: 400px; /* Set the size of the bottom image */
+            height: auto;
+        }
+
+        a {
+            text-decoration: none; /* Optional: Remove underline from links */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heart Images -->
+    <div class="images">
+        <a href="letter.html">
+            <img src="letter.jpg" alt="Heart Image 1">
+        </a>
+
+        </a>
+    </div>
+
+    <!-- Text Image aligned to the bottom (no zoom effect) -->
+    <img class="bottom-image" src="open.png" alt="Text Image">
+</body>
+</html>
