@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Valentine's Day</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            flex-direction: column; /* Stack elements vertically */
+            position: relative; /* To keep bottom image fixed */
+            cursor: url('penguin.cur'), auto; /* Apply custom cursor */
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 90px; /* Space for the bottom image */
+        }
+
+        /* Styling for heart images */
+        .images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+
+        /* Zoom effect on hover for heart images only */
+        .images img:hover {
+            transform: scale(1.1); /* Zoom in by 10% */
+        }
+
+        .bottom-image {
+            position: absolute; /* Position it at the bottom */
+            bottom: 20px; /* Adjust space from bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Centers it horizontally */
+            width: 400px; /* Set the size of the bottom image */
+            height: auto;
+        }
+
+        a {
+            text-decoration: none; /* Optional: Remove underline from links */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heart Images -->
+    <div class="images">
+        <a href="heart1.html">
+            <img src="heart.jpg" alt="Heart Image 1">
+        </a>
+
+        <a href="heart2.html">
+            <img src="heart.jpg" alt="Heart Image 2">
+        </a>
+
+        <a href="heart3.html">
+            <img src="heart.jpg" alt="Heart Image 3">
+        </a>
+
+        <a href="heart4.html">
+            <img src="heart.jpg" alt="Heart Image 4">
+        </a>
+    </div>
+
+    <!-- Text Image aligned to the bottom (no zoom effect) -->
+    <img class="bottom-image" src="text1.png" alt="Text Image">
+</body>
+</html>
