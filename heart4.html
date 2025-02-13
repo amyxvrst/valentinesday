@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px; /* Space for the bottom image */
+        }
+
+        img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            margin: 10px;
+        }
+        .images img:hover {
+            cursor: url('penguin.cur'), auto; /* Custom cursor */
+        }
+
+        .bottom-image {
+            position: absolute; /* Position it at the bottom */
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); /* Centers it horizontally */
+            width: 400px; /* Set the size of the bottom image */
+            height: auto;
+        }
+
+        a {
+            text-decoration: none; /* Optional: Remove underline from links */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heart Images -->
+    <div class="images">
+        <a href="nextbatman.html">
+            <img src="batman.png" alt="waldo">
+        </a>
+
+    </div>
+
+    <!-- Text Image aligned to the bottom -->
+   
+        <img class="bottom-image" src="batmantext.png" alt="Text Image">
+   
+</body>
+</html>
